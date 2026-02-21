@@ -1,0 +1,27 @@
+
+PIMA INDIANS DIABETES - NEURAL NETWORK RESULTS
+===============================================
+Model Architecture: 8 → 16 → 8 → 1
+Optimizer: Adam (lr=0.001)
+Epochs trained: 106
+
+TEST SET PERFORMANCE
+---------------------
+Accuracy:   75.32%
+Precision:  62.12%
+Recall:     75.93%
+F1-Score:   68.33%
+
+CONFUSION MATRIX
+---------------------
+True Negatives  (No Diabetes, correct):  75
+False Positives (predicted Diabetes, wrong): 25
+False Negatives (missed Diabetes):       13
+True Positives  (Diabetes, correct):     41
+
+NOTES
+---------------------
+- Dataset: 768 samples, 8 features, 65/35 class imbalance
+- Test Loss: 0.5069
+- 13 false negatives = patients with diabetes not detected
+- Model generalizes well (no overfitting observed in training curves)
